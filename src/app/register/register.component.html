@@ -1,0 +1,60 @@
+<div class="panel panel-info">
+ <div class="panel-heading">
+   <h2 class="panel-title">Sign-Up</h2>
+ </div>
+<div class="panel-body">
+  <div class="form-group row">
+      <label for="first_name" class="col-sm-3 col-form-label">First Name</label> <span [ngClass]="fname"></span>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="first_name" placeholder="First Name"
+        [(ngModel)] = "first_name"
+        (input) = "onUpdateForm($event)">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="last_name" class="col-sm-3 col-form-label">Last Name</label> <span [ngClass]="lname"></span>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="last_name" placeholder="Last Name"
+               [(ngModel)] = "last_name"
+               (input) = "onUpdateForm($event)">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="username" class="col-sm-3 col-form-label">User Name</label> <span [ngClass]="uname"></span>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="username" placeholder="User Name"
+               [(ngModel)] = "username"
+               (input) = "onUpdateForm($event)">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-sm-3 col-form-label">Email</label> <span [ngClass]="eml"></span>
+      <div class="col-sm-7">
+        <input type="email" class="form-control" id="email" placeholder="Email"
+               [(ngModel)] = "email"
+               (input) = "onUpdateForm($event)">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="password" class="col-sm-3 col-form-label">Password</label> <span [ngClass]="pass"></span>
+      <div class="col-sm-7">
+        <input type="password" class="form-control" id="password" placeholder="Password"
+               [(ngModel)] = "password"
+               (input) = "onUpdateForm($event)">
+        <div [(ngClass)]="passclass">{{passtype}}</div>
+      </div>
+    </div>
+</div>
+  <div class="panel-footer">
+  <div class="form-group row">
+      <div class="col-sm-6">
+        <button type="submit" class="btn btn-success btn-lg" [disabled]="disabled">Sign in</button>
+      </div>
+       <div class="col-sm-6">
+         <button type="reset" class="btn btn-danger btn-lg"
+         (click) = "resetForm()">Reset</button>
+       </div>
+    </div>
+
+</div>
+</div>

@@ -1,0 +1,40 @@
+<div class="panel panel-success">
+<div class="panel-heading">
+  <h2 class="panel-title">Log-In</h2>
+</div>
+  <div class="panel-body">
+
+    <div class="form-group row">
+      <br/><br/>
+      <label for="username" class="col-sm-3 col-form-label">User Name</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="username" placeholder="User Name"
+               [(ngModel)] = "username"
+               (input) = "onUpdateForm($event)">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <br/><br/>
+      <label for="password" class="col-sm-3 col-form-label">Password</label>
+      <div class="col-sm-7">
+        <input type="password" class="form-control" id="password" placeholder="Password"
+               [(ngModel)] = "password"
+               (input) = "onUpdateForm($event)">
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div class="form-group row">
+      <div class="col-sm-6">
+        <br/><br/>
+        <button type="submit" class="btn btn-success btn-lg" [disabled]="disabled" (click)="loginForm()">Log In</button>
+      </div>
+      <div class="col-sm-6">
+        <br/><br/>
+        <button type="reset" class="btn btn-danger btn-lg"
+                (click) = "resetForm()">Reset</button>
+      </div>
+    </div>
+</div>
+</div>

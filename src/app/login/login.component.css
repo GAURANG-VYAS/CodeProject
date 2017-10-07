@@ -1,0 +1,32 @@
+button {
+  font-family:"Josenfin Sans",serif;
+  font-size:15px;
+  font-weight:bold;
+}
+h2.panel-title {
+  font-family:"Josenfin Sans",serif;
+  font-size:18px;
+  font-weight:bold;
+}
+.panel{
+  margin:45px;
+  margin-left:50px;
+}
+label {
+  font-family:'Quattrocento';
+  font-size:16px;
+}
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+/*.btn-success{*/
+  /*background-color: #009900;*/
+/*}*/
+/*.btn-danger {*/
+  /*background-color: #cd3333;*/
+/*}*/
+

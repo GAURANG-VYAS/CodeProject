@@ -1,0 +1,52 @@
+
+button {
+  font-family:"Josenfin Sans",serif;
+  font-size:15px;
+  font-weight:bold;
+}
+
+h2.panel-title {
+  font-family:"Josenfin Sans",serif;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.panel{
+  margin:45px;
+  margin-left:50px;
+
+}
+
+label {
+  font-family:'Quattrocento';
+  font-size:16px;
+}
+
+/*.btn-success{*/
+  /*background-color: #009900;*/
+/*}*/
+/*.btn-danger {*/
+  /*background-color: #cd3333;*/
+/*}*/
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+.passtype-red,.passtype-yellow,.passtype-green {
+  font-family:"Bree Serif";
+  font-size:12px;
+  font-weight:bold;
+}
+.passtype-red{
+  color:#9f0000;
+}
+.passtype-green{
+  color:#006600;
+}
+.passtype-yellow{
+  color:#cccc00;
+}
